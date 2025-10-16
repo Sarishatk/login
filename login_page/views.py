@@ -24,6 +24,13 @@ class createLOginView(View):
                                  
                                  )
         return render(request,"login_user.html")
+    
+
+class Updatelogin(View):
+
+    def get(self,request):
+
+        
         
 
 
