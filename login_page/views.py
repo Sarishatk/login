@@ -49,6 +49,8 @@ class Updatelogin(View):
          emp_data.save()
 
          return render(request,"user_update.html")
+    
+    
 
 
 
