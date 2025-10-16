@@ -11,7 +11,14 @@ class createLOginView(View):
 
     def get(self,request):
 
-        loginMode.objects.create()
 
         return render(request,"login_user.html")
+    
+    def post(self,request):
+
+        print(request.POST)
+
+        loginMode.objects.create(name = request.POST.get())
+
+
 

@@ -21,7 +21,7 @@
     <h1 class="d-flex justify-content-center p-5">Sign in</h1>
     <div class="container border-success w-50 h-50 d-flex ">
       <div class="left w-50 h-100 bg-light shadow">
-        <form action="">
+        <form action="" method="post">
           <h2 class="d-flex justify-content-center p-4">Sign in</h2>
           <div style="margin-top: -25px;" class="d-flex justify-content-center ">
             <div style="gap: 8px;" class=" d-flex justify-content-between  w-25 ">
@@ -44,11 +44,11 @@
           <p class="d-flex justify-content-center">or use your account</p>
           <div class="d-flex justify-content-center">
             <label for=""></label>
-            <input type="Email" placeholder="Email" class="w-75 form-control" />
+            <input  name="name" type="name" placeholder="name" class="w-75 form-control" />
           </div>
           <div style="margin-top: 10px" class="d-flex justify-content-center">
             <label for=""></label>
-            <input
+            <input name=" pass"
               type="password"
               placeholder="Password"
               class="w-75 form-control"
@@ -68,7 +68,7 @@
         <h2 class="text-center text-white">Hello, Friends!</h2>
         <p class="text-center text-white fs-6">Enter your personal details and <br> start journey with us</p>
         <div class="d-flex justify-content-center p-2">
-            <button class="btn btn-outline-light w-75 rounded-pill">
+            <button type="submit" class="btn btn-outline-light w-75 rounded-pill">
               SIGN UP
             </button>
           </div>
