@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from login_page.models import loginMode
+
 from django.views.generic import View
 
 
@@ -8,6 +10,8 @@ from django.views.generic import View
 class createLOginView(View):
 
     def get(self,request):
+
+        loginMode.objects.create()
 
         return render(request,"login_user.html")
 
