@@ -5,4 +5,9 @@ from django.views.generic import View
 
 # Create your views here.
 
+class createLOginView(View):
+
+    def get(self,request):
+
+        return render(request,"login_user.html")
 
