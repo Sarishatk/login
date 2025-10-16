@@ -30,7 +30,14 @@ class Updatelogin(View):
 
     def get(self,request):
 
-        
+         emp_data = loginMode.objects.get(id = 1)
+
+         return render(request,"user_update.html",{{"emp_Data":emp_data}})
+
+
+
+
+
         
 
 
