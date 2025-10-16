@@ -20,5 +20,5 @@ from login_page.views import createLOginView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/',createLOginView.as_view())
+    path('login/',createLOginView.as_view()),
 ]
